@@ -5,6 +5,8 @@
 
 - Vector Add
 - Matrix Multiplication
+- Matrix Multiplication using Shared Memory
+- Coalesced Access
 
 ## Requirements
 
@@ -17,8 +19,6 @@
 ## How to Run
 
 - Run the compile.sh script. It will do all the work.
-
-#### Note: In case of error during the build of cuda-api_wrappers, the line include_directories(../cub/cub) should be included in its CMakeLists.txt file.
 
 ## Author
 
