@@ -4,9 +4,16 @@
 #### List of Exercises:
 
 - Vector Add
+- Vector Add using Unified Memory
 - Matrix Multiplication
 - Matrix Multiplication using Shared Memory
 - Coalesced Access
+- Bandwidth Test
+- Matrix Transpose
+- Reduction
+- Reverse vector using Shared Memory
+- Saxpy
+
 
 ## Requirements
 
