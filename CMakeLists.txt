@@ -161,6 +161,9 @@ SET(coalescing_src src/coalescing.cu)
 SET(reverse_src src/reverse_shared.cu)
 SET(matrix_transpose_src src/matrix_transpose.cu)
 SET(reduction src/reduction.cu)
+SET(stream_compression src/stream_compression.cu)
+SET(remove_if src/remove_if.cu)
+SET(stream_compact src/stream_compact.cu)
 
 # -----------------------
 # Main target(s)
@@ -193,8 +196,18 @@ if(CMAKE_SOURCE_DIR STREQUAL CMAKE_CURRENT_SOURCE_DIR)
   #cuda_add_executable(matrix_transpose ${matrix_transpose_src})
   #target_link_libraries(matrix_transpose cudart)
   
-  cuda_add_executable(reduction ${reduction})
-  target_link_libraries(reduction cudart)
+  #cuda_add_executable(reduction ${reduction})
+  #target_link_libraries(reduction cudart)
+
+  cuda_add_executable(stream_compression ${stream_compression})
+  
+  target_link_libraries(stream_compression cudart)
+
+  #cuda_add_executable(remove_if ${remove_if})
+  #target_link_libraries(remove_if cudart)
+
+  cuda_add_executable(stream_compact ${stream_compact})
+  target_link_libraries(stream_compact cudart)
 
 endif()
 
